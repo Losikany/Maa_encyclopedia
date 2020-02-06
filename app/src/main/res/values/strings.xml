@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">test</string>
+    <string name="welcome">Welcome To</string>
+    <string name="maa">Maa Encyclopedia</string>
+    <string name="by">By</string>
+    <string name="james">Losikany James</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="about">About</string>
+    <string name="origin">Whats up Maa Origin</string>
+    <string name="logo">logo</string>
+    <string name="maa_origin">Maa Origin</string>
+    <string name="title_origin">The Origin Of Maa</string>
+    <string name="maa_culture">Maa Culture</string>
+    <string name="maa_religion">Religion</string>
+    <string name="maa_subtribes">Subtribes</string>
+    <string name="animals">Animals</string>
+    <string name="common_words">Common Words</string>
+    <string name="numbers">Numbers</string>
+    <string name="names_meaning">Names Meaning</string>
+    <string name="idioms">Idioms</string>
+    <string name="proverbs">Proverbs</string>
+    <string name="bible">Bible</string>
+    <string name="donate">Donate</string>
+    <string name="origindata">
+
+        According to the tribe\'s own oral history, the Maasai originated north of Lake Turkana (north-west Kenya) in the lower Nile Valley. They began migrating south in the 15th century and arrived in the long trunk of land stretching across central Tanzania and Northern Kenya during the 17th and 18 century. The Maasai territory reached its most dominant size in the 19 century when they covered most of the Great Rift Valley and adjacent lands from Dodoma and Mount Marsabit.
+    \n\nAt this time the Maasai raided cattle far across the east at Tanga Coast in Tanzania. They used shields and spears, but were most feared for throwing orinka (clubs) which could be expertly thrown from up to 70 paces (approximately 100 meters).
+\n\nThe report of concentrated Maasai warriors told of their moving to Kenya in 1852, after depopulating the Wakuafi Wilderness in southeastern Kenya, the Maasai warriors threatened Mombasa, on Kenya\'s coast.
+    \n\nThe Maasai of 1883-1902 came after the time of expanding. This period was scarred by epidemics of smallpox, contagious bovine pleuropneumonia and rinderpest. The estimated 90 per cent of cattle and half of wild species perished from rinderpest. This drastic period coincided with drought. The rains neglected the lands completely in 1897 and 1898.
+   \n\n </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

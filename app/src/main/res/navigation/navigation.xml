@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/titleFragment">
+
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.example.test.HostFragment"
+        android:label="Maa Encyclopedia"
+        tools:layout="@layout/fragment_title" />
+    <fragment
+        android:id="@+id/about"
+        android:name="com.example.test.About"
+        android:label="About Maa Encyclopedia"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/origin"
+        android:name="com.example.test.Origin"
+        android:label="Maa Origin"
+        tools:layout="@layout/fragment_origin" />
+    <fragment
+        android:id="@+id/animals"
+        android:name="com.example.test.Animals"
+        android:label="Animals Names"
+        tools:layout="@layout/fragment_animals" />
+    <fragment
+        android:id="@+id/bible"
+        android:name="com.example.test.Bible"
+        android:label="Bible"
+        tools:layout="@layout/fragment_bible" />
+    <fragment
+        android:id="@+id/common_words"
+        android:name="com.example.test.Common_words"
+        android:label="Common Words"
+        tools:layout="@layout/fragment_common_words" />
+    <fragment
+        android:id="@+id/culture"
+        android:name="com.example.test.Culture"
+        android:label="Culture"
+        tools:layout="@layout/fragment_culture" />
+    <fragment
+        android:id="@+id/idioms"
+        android:name="com.example.test.Riddles"
+        android:label="Idioms"
+        tools:layout="@layout/fragment_idioms" />
+    <fragment
+        android:id="@+id/names_meaning"
+        android:name="com.example.test.Names_meaning"
+        android:label="Names Meaning"
+        tools:layout="@layout/fragment_names_meaning" />
+    <fragment
+        android:id="@+id/numbers"
+        android:name="com.example.test.Numbers"
+        android:label="Numbers"
+        tools:layout="@layout/fragment_numbers" />
+    <fragment
+        android:id="@+id/proverbs"
+        android:name="com.example.test.Proverbs"
+        android:label="Proverbs"
+        tools:layout="@layout/fragment_proverbs" />
+    <fragment
+        android:id="@+id/religion"
+        android:name="com.example.test.Religion"
+        android:label="Religion"
+        tools:layout="@layout/fragment_religion" />
+    <fragment
+        android:id="@+id/subtribes"
+        android:name="com.example.test.Subtribes"
+        android:label="Subtribes"
+        tools:layout="@layout/fragment_subtribes" />
+    <fragment
+        android:id="@+id/support_donate"
+        android:name="com.example.test.Support_donate"
+        android:label="Support/Donate"
+        tools:layout="@layout/fragment_support_donate" />
+</navigation>

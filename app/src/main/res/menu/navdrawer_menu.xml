@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="History and Culture">
+
+        <menu>
+            <item
+                android:id="@+id/origin"
+                android:title="@string/maa_origin" />
+            <item
+                android:id="@+id/culture"
+                android:title="@string/maa_culture" />
+            <!--android:icon="@drawable/ic_launcher_background"-->
+
+
+            <item
+                android:id="@+id/religion"
+                android:title="@string/maa_religion" />
+            <item
+                android:id="@+id/subtribes"
+                android:title="@string/maa_subtribes" />
+        </menu>
+    </item>
+
+    <item android:title="Language Translation">
+        <menu>
+
+            <item
+                android:id="@+id/animals"
+                android:title="@string/animals" />
+            <item
+                android:id="@+id/common_words"
+                android:title="@string/common_words" />
+
+            <item
+                android:id="@+id/numbers"
+                android:title="@string/numbers" />
+            <item
+                android:id="@+id/names_meaning"
+                android:title="@string/names_meaning" />
+        </menu>
+    </item>
+    <item android:title="Idioms and Proverbs">
+        <menu>
+            <item
+                android:id="@+id/idioms"
+                android:title="@string/idioms" />
+            <item
+                android:id="@+id/proverbs"
+                android:title="@string/proverbs" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/bible"
+        android:title="@string/bible" />
+    <item
+        android:id="@+id/support_donate"
+        android:title="@string/donate" />
+</menu>

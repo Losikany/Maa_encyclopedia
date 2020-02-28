@@ -5,16 +5,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Numbers.Numbers">
+    tools:context="Names.Girls">
 
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/numbers_recycler_View"
+        android:id="@+id/names_recyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="4dp"
         android:background="@android:color/darker_gray"
         android:clipToPadding="false"
-        tools:listitem="@layout/numbers_listview"/>
+        tools:listitem="@layout/names_listview"/>
 
 </RelativeLayout>

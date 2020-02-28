@@ -41,18 +41,18 @@
         android:label="Culture"
         tools:layout="@layout/fragment_culture" />
     <fragment
-        android:id="@+id/idioms"
-        android:name="com.example.test.Riddles"
-        android:label="Idioms"
-        tools:layout="@layout/fragment_idioms" />
+        android:id="@+id/riddles"
+        android:name="Riddles_Folder.Riddles"
+        android:label="Riddles"
+        tools:layout="@layout/fragment_riddles" />
     <fragment
         android:id="@+id/names_meaning"
-        android:name="com.example.test.Names_meaning"
+        android:name="Names.Names_meaning"
         android:label="Names Meaning"
         tools:layout="@layout/fragment_names_meaning" />
     <fragment
         android:id="@+id/numbers"
-        android:name="com.example.test.Numbers"
+        android:name="Numbers.Numbers"
         android:label="Numbers"
         tools:layout="@layout/fragment_numbers" />
     <fragment
@@ -75,4 +75,34 @@
         android:name="com.example.test.Support_donate"
         android:label="Support/Donate"
         tools:layout="@layout/fragment_support_donate" />
+    <fragment
+        android:id="@+id/boys"
+        android:name="Names.Boys"
+        android:label="fragment_boys"
+        tools:layout="@layout/fragment_boys" />
+    <fragment
+        android:id="@+id/girls"
+        android:name="Names.Girls"
+        android:label="fragment_girls"
+        tools:layout="@layout/fragment_girls" />
+    <fragment
+        android:id="@+id/colors"
+        android:name="Colors_package.Colors"
+        android:label="fragment_colors"
+        tools:layout="@layout/fragment_colors" />
+    <fragment
+        android:id="@+id/food"
+        android:name="com.example.test.Food"
+        android:label="fragment_food"
+        tools:layout="@layout/fragment_food" />
+    <fragment
+        android:id="@+id/family"
+        android:name="com.example.test.Family"
+        android:label="fragment_family"
+        tools:layout="@layout/fragment_family" />
+    <fragment
+        android:id="@+id/phrases"
+        android:name="com.example.test.Phrases"
+        android:label="fragment_phrases"
+        tools:layout="@layout/fragment_phrases" />
 </navigation>

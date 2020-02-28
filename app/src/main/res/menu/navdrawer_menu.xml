@@ -41,11 +41,11 @@
                 android:title="@string/names_meaning" />
         </menu>
     </item>
-    <item android:title="Idioms and Proverbs">
+    <item android:title="Riddles and Proverbs">
         <menu>
             <item
-                android:id="@+id/idioms"
-                android:title="@string/idioms" />
+                android:id="@+id/riddles"
+                android:title="@string/riddles" />
             <item
                 android:id="@+id/proverbs"
                 android:title="@string/proverbs" />

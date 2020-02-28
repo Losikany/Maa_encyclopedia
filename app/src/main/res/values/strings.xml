@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">test</string>
+    <string name="app_name">Maa Encyclopedia</string>
     <string name="welcome">Welcome To</string>
     <string name="maa">Maa Encyclopedia</string>
     <string name="by">By</string>
@@ -18,7 +18,7 @@
     <string name="common_words">Common Words</string>
     <string name="numbers">Numbers</string>
     <string name="names_meaning">Names Meaning</string>
-    <string name="idioms">Idioms</string>
+    <string name="riddles">Riddles</string>
     <string name="proverbs">Proverbs</string>
     <string name="bible">Bible</string>
     <string name="donate">Donate</string>

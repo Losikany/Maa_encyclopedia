@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Names.Names_meaning">
+    tools:context="com.example.test.Names.Names_meaning">
 
     <FrameLayout
         android:id="@+id/fragment_container"

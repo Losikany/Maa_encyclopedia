@@ -22,7 +22,7 @@
         tools:layout="@layout/fragment_origin" />
     <fragment
         android:id="@+id/animals"
-        android:name="com.example.test.Animals"
+        android:name="com.example.test.animals.Animals"
         android:label="Animals Names"
         tools:layout="@layout/fragment_animals" />
     <fragment
@@ -38,26 +38,26 @@
     <fragment
         android:id="@+id/culture"
         android:name="com.example.test.Culture"
-        android:label="Culture"
+        android:label="Maa Ceremonies and Rituals"
         tools:layout="@layout/fragment_culture" />
     <fragment
         android:id="@+id/riddles"
-        android:name="Riddles_Folder.Riddles"
+        android:name="com.example.test.Riddles_Folder.Riddles"
         android:label="Riddles"
         tools:layout="@layout/fragment_riddles" />
     <fragment
         android:id="@+id/names_meaning"
-        android:name="Names.Names_meaning"
+        android:name="com.example.test.Names.Names_meaning"
         android:label="Names Meaning"
         tools:layout="@layout/fragment_names_meaning" />
     <fragment
         android:id="@+id/numbers"
-        android:name="Numbers.Numbers"
+        android:name="com.example.test.Numbers.Numbers"
         android:label="Numbers"
         tools:layout="@layout/fragment_numbers" />
     <fragment
         android:id="@+id/proverbs"
-        android:name="com.example.test.Proverbs"
+        android:name="com.example.test.proverbs.Proverbs"
         android:label="Proverbs"
         tools:layout="@layout/fragment_proverbs" />
     <fragment
@@ -68,7 +68,7 @@
     <fragment
         android:id="@+id/subtribes"
         android:name="com.example.test.Subtribes"
-        android:label="Subtribes"
+        android:label="Maa Sub-Tribes"
         tools:layout="@layout/fragment_subtribes" />
     <fragment
         android:id="@+id/support_donate"
@@ -77,22 +77,22 @@
         tools:layout="@layout/fragment_support_donate" />
     <fragment
         android:id="@+id/boys"
-        android:name="Names.Boys"
+        android:name="com.example.test.Names.Boys"
         android:label="fragment_boys"
         tools:layout="@layout/fragment_boys" />
     <fragment
         android:id="@+id/girls"
-        android:name="Names.Girls"
+        android:name="com.example.test.Names.Girls"
         android:label="fragment_girls"
         tools:layout="@layout/fragment_girls" />
     <fragment
         android:id="@+id/colors"
-        android:name="Colors_package.Colors"
+        android:name="com.example.test.Colors_package.Colors"
         android:label="fragment_colors"
         tools:layout="@layout/fragment_colors" />
     <fragment
         android:id="@+id/food"
-        android:name="com.example.test.Food"
+        android:name="Food_stuff.Food"
         android:label="fragment_food"
         tools:layout="@layout/fragment_food" />
     <fragment
@@ -102,7 +102,7 @@
         tools:layout="@layout/fragment_family" />
     <fragment
         android:id="@+id/phrases"
-        android:name="com.example.test.Phrases"
+        android:name="common_phrases.Phrases"
         android:label="fragment_phrases"
         tools:layout="@layout/fragment_phrases" />
 </navigation>

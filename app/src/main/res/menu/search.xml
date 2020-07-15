@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".Proverbs">
+    tools:context="com.example.test.proverbs.Proverbs">
 <item
     android:title="Search..."
     android:id="@+id/sv_search"

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_colors"
+        android:icon="@drawable/colors"
+        android:title="Colors" />
+    <item
+        android:id="@+id/nav_family"
+        android:icon="@drawable/family"
+        android:title="Family" />
+
+    <item
+        android:id="@+id/nav_food"
+        android:icon="@drawable/food"
+        android:title="Food" />
+
+    <item
+        android:id="@+id/nav_phrases"
+        android:icon="@drawable/phrase"
+        android:title="Phrases"/>
+
+
+</menu>

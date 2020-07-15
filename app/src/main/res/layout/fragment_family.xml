@@ -1,14 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Family">
+    android:fillViewport="true">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:padding="16dp"
+        tools:context=".Family">
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/father"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/family_text"
+            android:text="@string/father"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/mother"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            style="@style/family_text"
+            android:text="@string/mother"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/father" />
+
+        <TextView
+            android:id="@+id/grandfather"
+            style="@style/family_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/grandfather"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mother" />
+
+        <TextView
+            android:id="@+id/grandmother"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/family_text"
+            android:layout_marginTop="16dp"
+            android:text="@string/grandmother"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/grandfather" />
+
+        <TextView
+            android:id="@+id/boy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/family_text"
+            android:layout_marginTop="16dp"
+            android:text="@string/boy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/grandmother" />
+
+        <TextView
+            android:id="@+id/girl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/family_text"
+            android:layout_marginTop="16dp"
+            android:text="@string/girl"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/boy" />
+
+        <TextView
+            android:id="@+id/uncle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/family_text"
+            android:layout_marginTop="16dp"
+            android:text="@string/uncle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/girl" />
+
+        <TextView
+            android:id="@+id/sister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/family_text"
+            android:layout_marginTop="16dp"
+            android:text="@string/sister"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uncle" />
+
+        <TextView
+            android:id="@+id/brother"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/family_text"
+            android:layout_marginTop="16dp"
+            android:text="@string/brother"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sister" />
+
+        <TextView
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/family_text"
+            android:layout_marginTop="16dp"
+            android:text="@string/relative"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/brother" />
+        <TextView
+            android:id="@+id/man"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/family_text"
+            android:layout_marginTop="16dp"
+            android:text="@string/man"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relative" />
+        <TextView
+            android:id="@+id/woman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            style="@style/family_text"
+            android:text="@string/woman"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/man" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

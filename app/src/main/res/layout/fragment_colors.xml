@@ -1,21 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Colors_package.Colors">
+    android:fillViewport="true">
 
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/colors_rv"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="4dp"
-        android:layoutAnimation="@anim/left"
-        android:background="@android:color/darker_gray"
-        android:clipToPadding="false"
-        tools:listitem="@layout/colors_listview"/>
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        tools:context="com.example.test.Colors_package.Colors">
 
-</RelativeLayout>
+
+        <TextView
+            android:id="@+id/red_txt"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:background="@android:color/holo_red_dark"
+            android:gravity="center_horizontal"
+            android:text="@string/red"
+            android:textColor="@android:color/white"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/black_txt"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:background="@android:color/black"
+            android:gravity="center_horizontal"
+            android:text="@string/black"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/red_txt"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/white"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/text_border"
+            android:gravity="center_horizontal"
+            android:text="@string/white"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/red_txt" />
+
+
+        <TextView
+            android:id="@+id/green"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="24dp"
+            android:background="@android:color/holo_green_dark"
+            android:gravity="center_horizontal"
+            android:text="@string/green"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/white"
+            app:layout_constraintTop_toBottomOf="@+id/black_txt" />
+
+
+        <TextView
+            android:id="@+id/yello"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/yellow"
+            android:gravity="center_horizontal"
+            android:text="@string/yellow"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/white" />
+
+        <TextView
+            android:id="@+id/blue"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="24dp"
+            android:background="@android:color/holo_blue_dark"
+            android:gravity="center_horizontal"
+            android:text="@string/blue"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/yello"
+            app:layout_constraintTop_toBottomOf="@+id/green" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

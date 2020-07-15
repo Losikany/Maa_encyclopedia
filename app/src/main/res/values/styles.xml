@@ -18,5 +18,37 @@
         <item name="android:textSize">20sp</item>
 
     </style>
+    <style name="family_text">
+<item name="android:gravity">center_vertical</item>
+        <item name="android:background">#5DB4C1</item>
+        <item name="android:textColor">@android:color/background_dark</item>
+        <item name="android:textSize">16sp</item>
 
+    </style>
+
+    <style name="subtribe">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/holo_red_dark</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="clan">
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textColor">#0744EC</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="clanlist">
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
 </resources>

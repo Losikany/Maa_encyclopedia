@@ -1,108 +1,220 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:fillViewport="true">
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="16dp"
-        android:orientation="vertical"
-        tools:context="com.example.test.Colors_package.Colors">
+        android:padding="16dp"
+        tools:context=".Colors">
 
-
-        <TextView
-            android:id="@+id/red_txt"
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/carview_white"
             android:layout_width="120dp"
-            android:layout_height="150dp"
-            android:background="@android:color/holo_red_dark"
-            android:gravity="center_horizontal"
-            android:text="@string/red"
-            android:textColor="@android:color/white"
-            android:textSize="27sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_height="138dp"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="10dp"
+            card_view:cardCornerRadius="12dp"
+            card_view:cardElevation="3dp"
+            card_view:contentPadding="4dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                >
 
 
-        <TextView
-            android:id="@+id/black_txt"
+                <TextView
+                    android:id="@+id/clansList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/clanlist"
+
+                    android:text="@string/white"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/carview2_red"
             android:layout_width="120dp"
-            android:layout_height="150dp"
-            android:background="@android:color/black"
-            android:gravity="center_horizontal"
-            android:text="@string/black"
-            android:textColor="@android:color/white"
-            android:textSize="30sp"
-            android:textStyle="bold"
+            android:layout_height="138dp"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            app:cardBackgroundColor="@android:color/holo_red_dark"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="3dp"
+            app:contentPadding="4dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/red_txt"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toEndOf="@id/carview_white"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="99dp"
+                android:layout_height="match_parent"
+                android:padding="10dp">
 
 
-        <TextView
-            android:id="@+id/white"
+                <TextView
+                    android:id="@+id/clanslist_sambur"
+                    style="@style/clanlist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/red"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/carview2_black"
             android:layout_width="120dp"
-            android:layout_height="150dp"
-            android:layout_marginTop="24dp"
-            android:background="@drawable/text_border"
-            android:gravity="center_horizontal"
-            android:text="@string/white"
-            android:textSize="26sp"
-            android:textStyle="bold"
+            android:layout_height="138dp"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="3dp"
+            app:contentPadding="4dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/red_txt" />
+            app:cardBackgroundColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@id/carview_white">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
 
 
-        <TextView
-            android:id="@+id/green"
+                <TextView
+                    android:id="@+id/text_black"
+                    style="@style/clanlist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/black"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/carview_green"
             android:layout_width="120dp"
-            android:layout_height="150dp"
-            android:layout_marginTop="24dp"
-            android:background="@android:color/holo_green_dark"
-            android:gravity="center_horizontal"
-            android:text="@string/green"
-            android:textSize="26sp"
-            android:textStyle="bold"
+            android:layout_height="138dp"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            app:cardBackgroundColor="@android:color/holo_green_dark"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="3dp"
+            app:contentPadding="4dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/white"
-            app:layout_constraintTop_toBottomOf="@+id/black_txt" />
+            app:layout_constraintStart_toEndOf="@id/carview2_black"
+            app:layout_constraintTop_toBottomOf="@id/carview2_red">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
 
 
-        <TextView
-            android:id="@+id/yello"
+                <TextView
+                    android:id="@+id/text_green"
+                    style="@style/clanlist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/red"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/carview_yellow"
             android:layout_width="120dp"
-            android:layout_height="150dp"
-            android:layout_marginTop="24dp"
-            android:background="@color/yellow"
-            android:gravity="center_horizontal"
-            android:text="@string/yellow"
-            android:textSize="26sp"
-            android:textStyle="bold"
+            android:layout_height="138dp"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="3dp"
+            app:contentPadding="4dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/white" />
+            app:cardBackgroundColor="@color/yellow"
+            app:layout_constraintTop_toBottomOf="@id/carview2_black">
 
-        <TextView
-            android:id="@+id/blue"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/text_yellow"
+                    style="@style/clanlist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yellow"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/carview_blue"
             android:layout_width="120dp"
-            android:layout_height="150dp"
-            android:layout_marginTop="24dp"
-            android:background="@android:color/holo_blue_dark"
-            android:gravity="center_horizontal"
-            android:text="@string/blue"
-            android:textSize="26sp"
-            android:textStyle="bold"
+            android:layout_height="138dp"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            app:cardBackgroundColor="@android:color/holo_blue_dark"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="3dp"
+            app:contentPadding="4dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/yello"
-            app:layout_constraintTop_toBottomOf="@+id/green" />
+            app:layout_constraintStart_toEndOf="@id/carview_yellow"
+            app:layout_constraintTop_toBottomOf="@id/carview_green">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
 
 
+                <TextView
+                    android:id="@+id/text_blue"
+                    style="@style/clanlist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/blue"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
     </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
+</androidx.core.widget.NestedScrollView>

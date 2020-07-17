@@ -10,12 +10,12 @@
 
     <androidx.cardview.widget.CardView
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/carview"
+        android:id="@+id/carview_white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         card_view:layout_constraintStart_toStartOf="parent"
         card_view:layout_constraintEnd_toEndOf="parent"
-        card_view:layout_constraintBottom_toTopOf="@id/carview2"
+        card_view:layout_constraintBottom_toTopOf="@id/carview2_red"
         android:layout_margin="10dp"
         android:orientation="vertical"
         card_view:cardCornerRadius="12dp"
@@ -38,12 +38,12 @@
 
     <androidx.cardview.widget.CardView
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/carview2"
+        android:id="@+id/carview2_red"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         card_view:layout_constraintStart_toStartOf="parent"
         card_view:layout_constraintEnd_toEndOf="parent"
-        card_view:layout_constraintTop_toBottomOf="@id/carview"
+        card_view:layout_constraintTop_toBottomOf="@id/carview_white"
         android:layout_margin="10dp"
         card_view:cardCornerRadius="12dp"
         card_view:cardElevation="3dp"

@@ -15,7 +15,7 @@ import com.example.test.R
  * A simple [Fragment] subclass.
  */
 class Colors : Fragment() {
-    val list_colors= ArrayList<colors_list>()
+    //val list_colors= ArrayList<colors_list>()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
